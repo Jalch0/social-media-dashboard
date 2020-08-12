@@ -4,35 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Media Dashboard</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="wrapper">
             <h1>Social Media Dashboard</h1>
-            <p>Total Followers: 23,004</p>
+            <p class="header-total">Total Followers: 23,004</p>
         </div>
     </header>
-    <section>
+    <section class="top-cards">
         <div class="wrapper">
-            <article class="card">
-                <p>
-                    <img src="images/icon-facebook.svg" alt="">
-                    @nathanf
-                </p>
-                <p>
-                    <span>1987</span>
-                    <span>Followers</span>
-                </p>
-                <p>
-                    12 Today
-                </p>
-            </article>
+            <div class="grid">
+                <article class="card facebook">
+                    <p class="card-title">
+                        <img src="images/icon-facebook.svg" alt="">
+                        @nathanf
+                    </p>
+                    <p class="card-followers">
+                        <span class="card-followers-number">1987</span>
+                        <span class="card-followers-title">Followers</span>
+                    </p>
+                    <p class="card-today">
+                        <img src="images/icon-up.svg" alt="">
+                        12 Today
+                    </p>
+                </article>
+                <article class="card twitter">
+                    <p class="card-title">
+                        <img src="images/icon-twitter.svg" alt="">
+                        @nathanf
+                    </p>
+                    <p class="card-followers">
+                        <span class="card-followers-number">1044</span>
+                        <span class="card-followers-title">Followers</span>
+                    </p>
+                    <p class="card-today">
+                        <img src="images/icon-up.svg" alt="">
+                        99 Today
+                    </p>
+                </article>
+                <article class="card instagram">
+                    <p class="card-title">
+                        <img src="images/icon-instagram.svg" alt="">
+                        @realnathanf
+                    </p>
+                    <p class="card-followers">
+                        <span class="card-followers-number">11k</span>
+                        <span class="card-followers-title">Followers</span>
+                    </p>
+                    <p class="card-today">
+                        <img src="images/icon-up.svg" alt="">
+                        12 Today
+                    </p>
+                </article>
+                <article class="card youtube">
+                    <p class="card-title">
+                        <img src="images/icon-youtube.svg" alt="">
+                        @nathanf
+                    </p>
+                    <p class="card-followers">
+                        <span class="card-followers-number">8239</span>
+                        <span class="card-followers-title">Followers</span>
+                    </p>
+                    <p class="card-today">
+                        <img src="images/icon-down.svg" alt="">
+                        12 Today
+                    </p>
+                </article>
+            </div>
         </div>
     </section>
-    <section>
-
+    <section class="overview">
+        <div class="wrapper">
+            <div class="card-small">
+                <p class="card-small-views">Page Views</p>
+                <p class="card-small-icon">
+                    <img src="images/icon-facebook.svg" alt="">
+                </p>
+                <p class="card-small-number">87</p>
+                <p class="card-small-percentage">
+                    <span>
+                    <img src="images/icon-down.svg" alt="">
+                    2%
+                    </span>
+                </p>
+            </div>
+        </div>
     </section>
 </body>
 </html>
