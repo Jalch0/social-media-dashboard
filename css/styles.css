@@ -45,6 +45,7 @@ h1 {
 
 .top-cards {
   margin-top: -50px;
+  margin-bottom: 3em;
 }
 
 /* - cards - */
@@ -116,6 +117,10 @@ h1 {
   align-items: center;
 }
 
+.card-today.isRed {
+  color: var(--bright-red);
+}
+
 .card-today img {
   margin-right: 5px;
 }
@@ -123,6 +128,11 @@ h1 {
 /* Overview */
 
 .overview {
+  padding-bottom: 2em;
+}
+
+h2 {
+  color: var(--gray);
 }
 
 .card-small {
@@ -157,10 +167,14 @@ h1 {
     text-align:right;
     display:flex;
     align-items:flex-end;
-    color: var(--bright-red);
+    color: var(--lime-green);
     justify-content: flex-end;
     font-size: .8em;
     font-weight: bold;
+}
+
+.card-small-percentage.isRed {
+  color: var(--bright-red);
 }
 
 .card-small-percentage span {
@@ -170,4 +184,16 @@ h1 {
 
 .card-small-percentage img {
     margin-right: 2px;
+}
+
+@media screen and (min-width: 480px){
+  .grid {
+    border: 1px solid purple;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 25px;
+  }
+  .wrapper {
+    max-width: 1440px;
+    margin: auto;
+  }
 }
