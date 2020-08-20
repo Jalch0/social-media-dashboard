@@ -18,6 +18,8 @@ body {
   --cardGray: #f0f3fa;
   --lightGray: #f8f9fe;
   --cardTitle: #6f717e;
+  --darktitle: #a3a3bc;
+  --ColorHover: #e1e3f0;
   --baseBackground: white;
   --baseColor: #1d2029;
   --switchSpinner:white;
@@ -31,11 +33,20 @@ body {
   display: grid;
   grid-row-gap: 25px;
 }
-
-.dark-mode {
+.alinear {
   display:flex;
   justify-content: space-between;
-  padding-top: 2em;
+}
+.dark-mode {
+  display: flex;
+  align-items: center;
+}
+
+.dark-mode-title {
+  color: var(--darktitle);
+  font-weight: bold;
+  font-size: 1.1em;
+  padding-right: 1em;
 }
 
 .checkbox{
@@ -73,21 +84,23 @@ body {
 
 .header {
   background: var(--lightGray);
-  padding-bottom: 100px;
+  padding-bottom: 70px;
   border-radius: 0 0 20px 20px;
   padding-top: 2em;
+  padding-bottom: 6em;
 }
 
 .header-total {
   color: #5f616d;
   margin: 0.5em 0;
   font-weight: 700;
-  padding-bottom: 1.5em;
+  padding-bottom: 1.2em;
+  font-size:1.1em;
 }
 
 h1 {
   margin: 0;
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 
 .top-cards {
@@ -99,10 +112,15 @@ h1 {
 .card {
   border-radius: 8px;
   overflow: hidden;
-  background: var(--cardLight);
+  background: var(--cardGray);
   text-align: center;
   padding: 1.7em 0;
   position: relative; 
+}
+
+.card:hover{
+  cursor:pointer;
+  background:var(--ColorHover);
 }
 .card:before {
   content: "";
@@ -190,6 +208,12 @@ h2 {
     border-radius: 8px;
     padding: 1.7em;
 }
+
+.card-small:hover{
+  cursor:pointer;
+  background: var(--ColorHover);
+}
+
 .card-small p {
     margin: 0;
 }
@@ -245,10 +269,18 @@ h2 {
   }
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:768px){
 
   .header-total{
     border-bottom: 1px solid var(--gray);
+  }
+
+  .alinear{
+    display:block;
+  }
+  .dark-mode {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -271,9 +303,11 @@ h2 {
   --baseBackground: #1d2029;
   --baseColor: white;
   --gray: #8088ad;
-  --lightGray: #1d2029;
+  --lightGray: #20222f;
+  --darktitle: white;
   --cardTitle:#8088ad;
   --switchSpinner:#282943;
+  --ColorHover: #333a56;
   --switch: linear-gradient(to right, #4796d2 0%,#37ce8f 100%);
 }
 
@@ -282,7 +316,9 @@ h2 {
   --cardGray: #f0f3fa;
   --lightGray: #f8f9fe;
   --cardTitle: #6f717e;
+  --ColorHover: #e1e3f0;
   --baseBackground: white;
+  --darktitle: #a3a3bc;
   --baseColor: #1d2029;
   --switchSpinner:white;
   --switch: #5f616d;
@@ -294,9 +330,11 @@ h2 {
     --baseBackground: #1d2029;
     --baseColor: white;
     --gray: #8088ad;
-    --lightGray: #1d2029;
+    --darktitle: #a3a3bc;
+    --lightGray: #20222f;
     --cardTitle:#8088ad;
     --switchSpinner:#282943;
+    --ColorHover: #333a56;
     --switch: linear-gradient(to right, #4796d2 0%,#37ce8f 100%);
   }
 }
