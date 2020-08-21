@@ -6,6 +6,15 @@ body {
   color: var(--baseColor);
 }
 
+.attribution {
+  margin-left: 2em;
+  color: var(--cardTitle);
+}
+
+.attribution a {
+  color: var(--cardTitle);
+}
+
 :root {
   --lime-green: hsl(163, 72%, 41%);
   --bright-red: hsl(356, 69%, 56%);
