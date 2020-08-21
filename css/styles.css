@@ -6,6 +6,8 @@ body {
   color: var(--baseColor);
 }
 
+  /* Attribution */
+
 .attribution {
   margin-left: 2em;
   color: var(--cardTitle);
@@ -14,6 +16,8 @@ body {
 .attribution a {
   color: var(--cardTitle);
 }
+
+/* Variables with colors for better organization in dark and light mode */
 
 :root {
   --lime-green: hsl(163, 72%, 41%);
@@ -42,10 +46,13 @@ body {
   display: grid;
   grid-row-gap: 25px;
 }
-.alinear {
+.alignheader {
   display:flex;
   justify-content: space-between;
 }
+
+/* Switcher alignment */
+
 .dark-mode {
   display: flex;
   align-items: center;
@@ -57,6 +64,8 @@ body {
   font-size: 1.1em;
   padding-right: 1em;
 }
+
+/* Theme Switcher */
 
 .checkbox{
   display:none;
@@ -91,6 +100,8 @@ body {
 
 }
 
+/* Header */
+
 .header {
   background: var(--lightGray);
   padding-bottom: 70px;
@@ -111,6 +122,7 @@ h1 {
   margin: 0;
   font-size: 1.7em;
 }
+
 
 .top-cards {
   margin-top: -50px;
@@ -266,6 +278,8 @@ h2 {
     margin-right: 2px;
 }
 
+/* Responsive Model */
+
 @media screen and (min-width: 480px){
   
   .grid {
@@ -307,6 +321,8 @@ h2 {
   }
 }
 
+/* Variables with colors for better organization in dark mode */
+
 .is-dark-mode{
   --cardGray: #252b43;
   --baseBackground: #1d2029;
@@ -320,6 +336,8 @@ h2 {
   --switch: linear-gradient(to right, #4796d2 0%,#37ce8f 100%);
 }
 
+/* Variables with colors for better organization in light mode */
+
 .is-light-mode {
   --gray: #9b9ea7;
   --cardGray: #f0f3fa;
@@ -332,6 +350,8 @@ h2 {
   --switchSpinner:white;
   --switch: #5f616d;
 }
+
+/* Media query for the devices with dark mode activated in settings. */
 
 @media (prefers-color-scheme: dark){
   :root {
